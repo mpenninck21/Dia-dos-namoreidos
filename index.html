@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para você 💖</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Oi, Mozin 💖</h1>
+
+  <div class="menu">
+    <button onclick="abrirEnvelope()">💌 Cartinha</button>
+    <button onclick="abrirPopup('fotos')">📸 Fotos</button>
+    <button onclick="abrirPopup('video')">🎵 Música</button>
+  </div>
+
+  <div class="pergunta">
+    <p>Aceita passar a sua vida inteira comigo, até depois do fim?</p>
+
+    <button onclick="respostaSim()">Sim 💖</button>
+    <button id="nao">Não 😅</button>
+  </div>
+</div>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="fecharPopup()">✖</span>
+    <div id="popup-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
