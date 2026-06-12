@@ -71,7 +71,7 @@ Eu te amo eternamente. 💖`;
         el.innerHTML += texto[i];
       }
       i++;
-      setTimeout(digitar, 40);
+      setTimeout(digitar, 80);
     }
   }
 
@@ -121,7 +121,7 @@ function criarCoracao() {
   setTimeout(() => heart.remove(), 8000);
 }
 
-setInterval(criarCoracao, 250);
+setInterval(criarCoracao, 150);
 
 window.onclick = function(event) {
   const popup = document.getElementById("popup");
