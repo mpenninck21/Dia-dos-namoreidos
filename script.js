@@ -49,13 +49,15 @@ function mostrarCarta(el) {
 }
 
 function escreverTexto() {
-  const texto = `Feliz dia dos namorados, meu amor.
-É um prazer enorme dividir a vida com você. Espero que goste
-dessa surpresinha rs. Obrigado por estar comigo em todos os 
-momentos possíveis. Eu não poderia estar mais feliz e realizado
+  const texto = `Feliz dia dos namorados, meu amor.<Br>
+É um prazer enorme dividir a vida com você. 
+Espero que goste dessa surpresinha rs. 
+Obrigado por estar comigo em todos os momentos possíveis. 
+Eu não poderia estar mais feliz e realizado
 na minha vida, e tudo graças a você.
 Que possamos comemorar todos os proximos dia dos namorados
 até o fim de nossas vidas.
+<br>
 Eu te amo eternamente. 💖`;
 
   let i = 0;
