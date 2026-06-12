@@ -82,7 +82,9 @@ button:hover {
   background: #fdf6e3;
   padding: 30px;
   border-radius: 10px;
-  text-align: justify-all;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 20px;
   line-height: 1.4;
   letter-spacing: 0.5px;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
