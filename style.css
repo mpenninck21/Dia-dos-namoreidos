@@ -18,6 +18,9 @@ body {
 h1 {
   font-size: 3rem;
 }
+h2{
+  text-align: center;
+}
 
 /* BOTÕES */
 button {
@@ -28,6 +31,7 @@ button {
   color: white;
   cursor: pointer;
   margin: 10px;
+  text-align: center;
 }
 
 button:hover {
@@ -43,24 +47,22 @@ button:hover {
   display: none;
   position: fixed;
   inset: 0;
-
+  overflow-y: auto;   /* permite rolar */
   display: flex;
-  align-items: center;
+  align-items: flex-start;   /* ← ESSA É A CHAVE */
   justify-content: center;
-
   background: rgba(0,0,0,0.5);
   z-index: 1000;
+  padding: 40px 0;  /* espaço em cima e embaixo */
 }
 
 .popup-content {
   background: white;
   width: 90%;
   max-width: 500px;
-
   padding: 20px;
   border-radius: 20px;
   position: relative;
-
   animation: zoom 0.4s;
 }
 
@@ -113,7 +115,7 @@ button:hover {
   height: 50%;
   background: #ff5d8f;
   clip-path: polygon(0 0, 50% 100%, 100% 0);
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .envelope.open::before {
@@ -132,6 +134,10 @@ img {
   max-width: 200px;
   margin: 10px;
   border-radius: 15px;
+  transition: 0.3s;
+}
+img:hover {
+  transform: scale(1.08);
 }
 
 /* LINK MUSICA */
@@ -143,6 +149,7 @@ a {
   color: white;
   display: inline-block;
   text-decoration: none;
+  text-align: center;
 }
 
 /* CORAÇÕES */
