@@ -49,11 +49,14 @@ function mostrarCarta(el) {
 }
 
 function escreverTexto() {
-  const texto = `Meu amor,
-Eu fiz isso aqui só pra você 💖
-Cada detalhe foi pensado com carinho,
-porque você é a melhor parte da minha vida.
-Eu te amo muito.`;
+  const texto = `Feliz dia dos namorados, meu amor.
+É um prazer enorme dividir a vida com você. Espero que goste
+dessa surpresinha rs. Obrigado por estar comigo em todos os 
+momentos possíveis. Eu não poderia estar mais feliz e realizado
+na minha vida, e tudo graças a você.
+Que possamos comemorar todos os proximos dia dos namorados
+até o fim de nossas vidas.
+Eu te amo eternamente. 💖`;
 
   let i = 0;
   const el = document.getElementById("carta-texto");
