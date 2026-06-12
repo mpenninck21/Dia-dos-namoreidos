@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  background: linear-gradient(to right, #ffd6e0, #e6ccff);
+  overflow-x: hidden;
+}
+
+/* CENTRALIZA TUDO */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+/* BOTÕES */
+button {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  background: #ff8fab;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background: #ff5d8f;
+}
+
+#nao {
+  position: relative;
+}
+
+/* POPUP CENTRALIZADO DE VERDADE */
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  width: 90%;
+  max-width: 500px;
+
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+
+  animation: zoom 0.4s;
+}
+
+@keyframes zoom {
+  from { transform: scale(0.6); }
+  to { transform: scale(1); }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* CARTA */
+.carta {
+  background: #fdf6e3;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
+  background-image: repeating-linear-gradient(
+    #fdf6e3,
+    #fdf6e3 32px,
+    #e4d5b7 33px
+  );
+
+  line-height: 1.4;
+  font-family: Georgia, serif;
+}
+
+/* ENVELOPE */
+.envelope {
+  width: 220px;
+  height: 140px;
+  background: #ff8fab;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: auto;
+  position: relative;
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: #ff5d8f;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  transition: 0.5s;
+}
+
+.envelope.open::before {
+  transform: rotateX(180deg);
+}
+
+/* FOTOS */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+/* LINK MUSICA */
+a {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #ff8fab;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* CORAÇÕES */
+.heart-fall {
+  position: fixed;
+  top: -10px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+.heart {
+  position: fixed;
+  bottom: 0;
+  animation: subir 3s linear forwards;
+}
+
+@keyframes subir {
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
